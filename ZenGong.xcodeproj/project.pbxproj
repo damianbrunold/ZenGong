@@ -14,6 +14,16 @@
 		0733F2E719D1BD8900FC867F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0733F2E619D1BD8900FC867F /* Images.xcassets */; };
 		0733F2EA19D1BD8900FC867F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0733F2E819D1BD8900FC867F /* LaunchScreen.xib */; };
 		0733F2F619D1BD8900FC867F /* ZenGongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0733F2F519D1BD8900FC867F /* ZenGongTests.m */; };
+		07375AB619FC29000016B7A9 /* gong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07375AB519FC29000016B7A9 /* gong.mp3 */; };
+		07375ACD1A02C6DF0016B7A9 /* settings-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 07375ACB1A02C6DF0016B7A9 /* settings-32.png */; };
+		07375ACE1A02C6DF0016B7A9 /* settings-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07375ACC1A02C6DF0016B7A9 /* settings-32@2x.png */; };
+		07375AD51A02C9CC0016B7A9 /* play-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 07375AD11A02C9CC0016B7A9 /* play-32.png */; };
+		07375AD61A02C9CC0016B7A9 /* play-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07375AD21A02C9CC0016B7A9 /* play-32@2x.png */; };
+		07375AD91A04E63C0016B7A9 /* stop-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 07375AD71A04E63C0016B7A9 /* stop-32.png */; };
+		07375ADA1A04E63C0016B7A9 /* stop-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07375AD81A04E63C0016B7A9 /* stop-32@2x.png */; };
+		076C54F019F56C6900555EE9 /* ZenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 076C54EF19F56C6900555EE9 /* ZenView.m */; };
+		076C54F319F8F24E00555EE9 /* ZenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 076C54F219F8F24E00555EE9 /* ZenModel.m */; };
+		076C54F719F94B1100555EE9 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076C54F619F94B1100555EE9 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +50,21 @@
 		0733F2EF19D1BD8900FC867F /* ZenGongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenGongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0733F2F419D1BD8900FC867F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0733F2F519D1BD8900FC867F /* ZenGongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenGongTests.m; sourceTree = "<group>"; };
+		07375AB519FC29000016B7A9 /* gong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gong.mp3; sourceTree = "<group>"; };
+		07375ACB1A02C6DF0016B7A9 /* settings-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-32.png"; sourceTree = "<group>"; };
+		07375ACC1A02C6DF0016B7A9 /* settings-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-32@2x.png"; sourceTree = "<group>"; };
+		07375AD11A02C9CC0016B7A9 /* play-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-32.png"; sourceTree = "<group>"; };
+		07375AD21A02C9CC0016B7A9 /* play-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-32@2x.png"; sourceTree = "<group>"; };
+		07375AD71A04E63C0016B7A9 /* stop-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop-32.png"; sourceTree = "<group>"; };
+		07375AD81A04E63C0016B7A9 /* stop-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop-32@2x.png"; sourceTree = "<group>"; };
+		076C54EF19F56C6900555EE9 /* ZenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenView.m; sourceTree = "<group>"; };
+		076C54F119F56C7B00555EE9 /* ZenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenView.h; sourceTree = "<group>"; };
+		076C54F219F8F24E00555EE9 /* ZenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenModel.m; sourceTree = "<group>"; };
+		076C54F419F8F26800555EE9 /* ZenModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenModel.h; sourceTree = "<group>"; };
+		076C54F519F94B1100555EE9 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		076C54F619F94B1100555EE9 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		07C6CF461A0ABEE7000448F7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		07C6CF471A0ABEF4000448F7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +110,22 @@
 				0733F2DE19D1BD8900FC867F /* AppDelegate.m */,
 				0733F2E019D1BD8900FC867F /* ViewController.h */,
 				0733F2E119D1BD8900FC867F /* ViewController.m */,
+				076C54F419F8F26800555EE9 /* ZenModel.h */,
+				076C54F219F8F24E00555EE9 /* ZenModel.m */,
+				076C54F119F56C7B00555EE9 /* ZenView.h */,
+				076C54EF19F56C6900555EE9 /* ZenView.m */,
+				076C54F519F94B1100555EE9 /* SettingsViewController.h */,
+				076C54F619F94B1100555EE9 /* SettingsViewController.m */,
 				0733F2E319D1BD8900FC867F /* Main.storyboard */,
 				0733F2E619D1BD8900FC867F /* Images.xcassets */,
 				0733F2E819D1BD8900FC867F /* LaunchScreen.xib */,
+				07375AB519FC29000016B7A9 /* gong.mp3 */,
+				07375AD11A02C9CC0016B7A9 /* play-32.png */,
+				07375AD21A02C9CC0016B7A9 /* play-32@2x.png */,
+				07375AD71A04E63C0016B7A9 /* stop-32.png */,
+				07375AD81A04E63C0016B7A9 /* stop-32@2x.png */,
+				07375ACB1A02C6DF0016B7A9 /* settings-32.png */,
+				07375ACC1A02C6DF0016B7A9 /* settings-32@2x.png */,
 				0733F2D919D1BD8900FC867F /* Supporting Files */,
 			);
 			path = ZenGong;
@@ -168,6 +206,12 @@
 				TargetAttributes = {
 					0733F2D519D1BD8900FC867F = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = DTX959FS2H;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					0733F2EE19D1BD8900FC867F = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -199,9 +243,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07375AD91A04E63C0016B7A9 /* stop-32.png in Resources */,
 				0733F2E519D1BD8900FC867F /* Main.storyboard in Resources */,
+				07375AD61A02C9CC0016B7A9 /* play-32@2x.png in Resources */,
+				07375AB619FC29000016B7A9 /* gong.mp3 in Resources */,
+				07375AD51A02C9CC0016B7A9 /* play-32.png in Resources */,
 				0733F2EA19D1BD8900FC867F /* LaunchScreen.xib in Resources */,
+				07375ADA1A04E63C0016B7A9 /* stop-32@2x.png in Resources */,
 				0733F2E719D1BD8900FC867F /* Images.xcassets in Resources */,
+				07375ACE1A02C6DF0016B7A9 /* settings-32@2x.png in Resources */,
+				07375ACD1A02C6DF0016B7A9 /* settings-32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076C54F319F8F24E00555EE9 /* ZenModel.m in Sources */,
+				076C54F019F56C6900555EE9 /* ZenView.m in Sources */,
 				0733F2E219D1BD8900FC867F /* ViewController.m in Sources */,
+				076C54F719F94B1100555EE9 /* SettingsViewController.m in Sources */,
 				0733F2DF19D1BD8900FC867F /* AppDelegate.m in Sources */,
 				0733F2DC19D1BD8900FC867F /* main.m in Sources */,
 			);
@@ -248,6 +302,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				0733F2E419D1BD8900FC867F /* Base */,
+				07C6CF461A0ABEE7000448F7 /* de */,
+				07C6CF471A0ABEF4000448F7 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -345,9 +401,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Damian Brunold (2984CKXLQX)";
 				INFOPLIST_FILE = ZenGong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -355,9 +413,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Damian Brunold (2984CKXLQX)";
 				INFOPLIST_FILE = ZenGong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -414,6 +474,7 @@
 				0733F2FB19D1BD8900FC867F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0733F2FC19D1BD8900FC867F /* Build configuration list for PBXNativeTarget "ZenGongTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +483,7 @@
 				0733F2FE19D1BD8900FC867F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

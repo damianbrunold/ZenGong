@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "ZenModel.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,20 @@
 
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [ZenModel loadData];
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+        [application registerUserNotificationSettings:
+            [UIUserNotificationSettings settingsForTypes:
+                UIUserNotificationTypeAlert|
+                UIUserNotificationTypeBadge|
+                UIUserNotificationTypeSound
+                categories:nil]];
+    }
     return YES;
 }
 
@@ -26,12 +39,23 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[ZenModel sharedInstance] saveData];
+    UIViewController *vc = self.window.rootViewController;
+    if ([vc isMemberOfClass:[ViewController class]]) {
+        ViewController *viewcontroller = (ViewController*)vc;
+        if (viewcontroller.ticker != nil) {
+            [viewcontroller.ticker invalidate];
+            viewcontroller.ticker = nil;
+        }
+    }
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    UIViewController *vc = self.window.rootViewController;
+    if ([vc isMemberOfClass:[ViewController class]]) {
+        ViewController *viewcontroller = (ViewController*)vc;
+        [viewcontroller reactivate];
+    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -39,7 +63,15 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [[ZenModel sharedInstance] saveData];
+    UIViewController *vc = self.window.rootViewController;
+    if ([vc isMemberOfClass:[ViewController class]]) {
+        ViewController *viewcontroller = (ViewController*)vc;
+        if (viewcontroller.ticker != nil) {
+            [viewcontroller.ticker invalidate];
+            viewcontroller.ticker = nil;
+        }
+    }
 }
 
 @end

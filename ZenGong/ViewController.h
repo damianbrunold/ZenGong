@@ -10,6 +10,15 @@
 
 @interface ViewController : UIViewController
 
+@property (weak) NSTimer *ticker;
+
+- (void)onTick:(NSTimer *)timer;
+
+- (IBAction)started:(id)sender;
+
+- (IBAction)settings:(id)sender;
+
+- (void)reactivate;
 
 @end
 

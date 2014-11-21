@@ -1,25 +1,142 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="redraw" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Nmn-fc-kzY" customClass="ZenView">
+                                <rect key="frame" x="16" y="28" width="568" height="552"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gt-hU-AXf">
+                                        <rect key="frame" x="274" y="212.5" width="20" height="32"/>
+                                        <state key="normal" image="play-32.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="started:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJQ-Zd-Ske"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brG-3z-Jbt">
+                                        <rect key="frame" x="268" y="306" width="33" height="32"/>
+                                        <state key="normal" image="settings-32.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bD-Q9-96D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="6Gt-hU-AXf" secondAttribute="centerY" constant="47" id="2S6-ZE-7uu"/>
+                                    <constraint firstAttribute="centerX" secondItem="6Gt-hU-AXf" secondAttribute="centerX" id="Faj-6r-pQI"/>
+                                    <constraint firstAttribute="centerX" secondItem="brG-3z-Jbt" secondAttribute="centerX" constant="-0.5" id="KMi-1R-FtJ"/>
+                                    <constraint firstAttribute="centerY" secondItem="brG-3z-Jbt" secondAttribute="centerY" constant="-47.5" id="b6Q-PQ-BVK"/>
+                                    <constraint firstAttribute="centerY" secondItem="brG-3z-Jbt" secondAttribute="centerY" constant="-46" id="fba-ew-5py"/>
+                                    <constraint firstAttribute="centerX" secondItem="brG-3z-Jbt" secondAttribute="centerX" constant="-0.5" id="glf-su-2lM"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="b6Q-PQ-BVK"/>
+                                        <exclude reference="glf-su-2lM"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nmn-fc-kzY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BC3-cC-sv1"/>
+                            <constraint firstItem="Nmn-fc-kzY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UvM-Ue-4Ed"/>
+                            <constraint firstItem="Nmn-fc-kzY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="abv-fG-kBs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nmn-fc-kzY" secondAttribute="bottom" constant="20" id="yMG-JA-KDr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="settingsButton" destination="brG-3z-Jbt" id="hGC-LL-pa1"/>
+                        <outlet property="startButton" destination="6Gt-hU-AXf" id="xih-yq-xDN"/>
+                        <outlet property="zenview" destination="Nmn-fc-kzY" id="30P-yr-1Ja"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="293" y="354"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="kd3-kh-y3E">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="85P-ns-fF7" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0gd-kP-QNY"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZfO-pE-faO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zqV-ru-ufY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbZ-EA-acK">
+                                <rect key="frame" x="0.0" y="68" width="600" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="ih8-Bi-oGZ"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQj-y0-ysl">
+                                <rect key="frame" x="529" y="28" width="55" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="12e-1Z-PYF"/>
+                                    <constraint firstAttribute="width" constant="55" id="Ofc-aT-yk3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="okAction:" destination="85P-ns-fF7" eventType="touchUpInside" id="0yb-qd-QJ2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JQj-y0-ysl" firstAttribute="top" secondItem="0gd-kP-QNY" secondAttribute="bottom" constant="8" id="183-g9-Lz5"/>
+                            <constraint firstItem="lbZ-EA-acK" firstAttribute="leading" secondItem="zqV-ru-ufY" secondAttribute="leadingMargin" constant="-16" id="CYk-zV-5Sg"/>
+                            <constraint firstItem="lbZ-EA-acK" firstAttribute="top" secondItem="JQj-y0-ysl" secondAttribute="bottom" constant="8" id="E5y-Hb-nUc"/>
+                            <constraint firstItem="JQj-y0-ysl" firstAttribute="trailing" secondItem="zqV-ru-ufY" secondAttribute="trailingMargin" id="HhR-6T-EvR"/>
+                            <constraint firstItem="JQj-y0-ysl" firstAttribute="top" secondItem="0gd-kP-QNY" secondAttribute="bottom" constant="8" id="X5V-G6-D62"/>
+                            <constraint firstItem="JQj-y0-ysl" firstAttribute="trailing" secondItem="zqV-ru-ufY" secondAttribute="trailingMargin" id="egE-UO-WuF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lbZ-EA-acK" secondAttribute="trailing" constant="-16" id="uQy-ie-Hy4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="183-g9-Lz5"/>
+                                <exclude reference="egE-UO-WuF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="duration" destination="lbZ-EA-acK" id="zj1-gc-P0l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1x-bs-Axr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="255"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play-32.png" width="20" height="32"/>
+        <image name="settings-32.png" width="32" height="32"/>
+    </resources>
 </document>
